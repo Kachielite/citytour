@@ -1,0 +1,43 @@
+.control{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+i{
+    color: rgba(128, 128, 128, 0.966);
+    margin: 10px;
+    height: max-content;
+    
+}
+
+i:hover{
+    color:red;
+    transform: scale(1.5);
+    transition: transform .3s ease;
+}
+
+.info{
+    border-style: double;
+    height: max-content;
+    width: 28rem;
+    text-align: center;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    font-family: 'Texturina', serif;
+    padding: 2px;
+}
+
+.detail-button-section{
+    position: fixed;
+    bottom: 10%;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+

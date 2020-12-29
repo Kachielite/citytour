@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.App{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  text-align: center;
+}
+
+h3{
+  font-family: 'Pirata One', cursive;
+  font-size: 3rem;
+}
+
+.control-section{
+  position: fixed;
+  top: 30%;
+  width: 100%;
+  margin-left: 0.4vw ;
+  margin-right: 0.4vw;
+}
+
+
+
+.social-links{
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-links i{
+  color: white;
+  margin: 10px 20px;
+}
+
+.social-links  i:hover{
+  color:red;
+  transform: scale(1.5);
+  transition: transform .3s ease;
+}

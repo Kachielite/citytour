@@ -1,0 +1,47 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    color: white;
+}
+
+.navbar-logo p{
+    border: 3px solid white;
+    padding: 0.5px;
+    font-family: 'Pirata One', cursive;
+    font-size: 2.5rem;
+}
+
+
+.navbar-link a {
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: 'Pirata One', cursive;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar-link a::before{
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.navbar-link a:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+.navbar-link a::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: red;
+    z-index: -1;
+    transition: transform .3s ease;
+}
